@@ -62,11 +62,19 @@ This project aims to automate the extraction of B2B contact information such as 
 ## 📁 Project Structure
 b2b_scraper_project/
 ├── scraper/
+
 │ ├── init.py
+
 │ ├── extract.py # Core scraping logic
+
 │ ├── utils.py # Helper functions (regex, etc.)
+
 ├── main.py # Entry point to run the scraper
+
 ├── requirements.txt # All required Python packages
+
 ├── README.md # Project documentation
+
 ├── example_output.csv # Sample output
+
 └── report.pdf # Final report (optional)
