@@ -59,6 +59,16 @@ This project aims to automate the extraction of B2B contact information such as 
 
 ---
 
+
+## ▶️ How to Run
+
+### 🔹 CLI Mode
+
+```bash
+streamlit run app.py
+```
+
+
 ## 📁 Project Structure
 b2b_scraper_project/
 ├── scraper/
