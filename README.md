@@ -1,82 +1,63 @@
-# b2b_scraper_projects
+# 🛠️ B2B Contact Scraper Project
 
+## 📌 Project Overview
 
----
-
-## 📑 report.pdf (isi naskah)
-
-Berikut adalah naskah isi `report.pdf` dalam format Markdown atau Word yang bisa kamu convert ke PDF:
+This project aims to automate the extraction of B2B contact information such as emails, phone numbers, and contact links from a list of domains. It is designed to save time and improve efficiency when gathering contact data from multiple websites.
 
 ---
 
-### 📘 Laporan Akhir: B2B Scraper Project
+## 🎯 Objective
 
-**Nama:** Ahmad Zulal Zaqi  
-**Tanggal:** Juni 2025  
-**Judul:** Otomatisasi Pengambilan Kontak B2B dari Daftar Domain
-
----
-
-#### 1. **Latar Belakang**
-
-Di era digital saat ini, kebutuhan untuk menjangkau perusahaan lain (B2B) semakin tinggi. Namun, proses pencarian email atau kontak dari website satu per satu sangat memakan waktu. Oleh karena itu, diperlukan sistem otomatis yang mampu mengumpulkan data dari banyak domain secara efisien.
+- Automatically extract:
+  - ✉️ Email addresses
+  - ☎️ Phone numbers
+  - 🔗 Contact page links
+- Provide analytics and export results to CSV
 
 ---
 
-#### 2. **Tujuan**
+## 🧠 Methodology
 
-Membangun scraper modular untuk mengekstrak:
-- Email,
-- Nomor telepon,
-- Tautan kontak,
-serta menyajikan dashboard analitik dan file hasil.
-
----
-
-#### 3. **Metodologi**
-
-- **Input:** Daftar domain (CSV)
-- **Proses:**
-  - Buka halaman HTML,
-  - Parse konten menggunakan BeautifulSoup,
-  - Ekstrak dengan Regex untuk email, phone, dan contact link,
-- **Output:** Preview + Analytics + Export CSV
+- **Input:** A CSV file containing domain names
+- **Process:**
+  1. Load each domain’s homepage
+  2. Parse HTML with BeautifulSoup
+  3. Use regex to extract contact data
+- **Output:** Analytics preview and downloadable CSV
 
 ---
 
-#### 4. **Hasil**
+## 📊 Results
 
-- Total domain: 7
-- Total email ditemukan: 380
-- Total nomor telepon: 1349
-- Total link kontak: 8
+| Metric            | Count   |
+|-------------------|---------|
+| Domains processed | 7       |
+| Emails found      | 380     |
+| Phone numbers     | 1,349   |
+| Contact links     | 8       |
 
-**Contoh domain:**  
-`https://qiscus.com` — 4 email ditemukan
-
----
-
-#### 5. **Kelebihan Sistem**
-
-- Modular dan scalable
-- Bisa dikembangkan menjadi aplikasi web
-- Output rapi dan bisa di-export
+**Example:**  
+`https://qiscus.com` → 4 emails found
 
 ---
 
-#### 6. **Rencana Pengembangan**
+## ✅ Key Features
 
-- Integrasi visual (Streamlit)
-- Tambah grafik & summary insight
-- Validasi hasil (cek format email/telepon)
-- Handling blocked request (retry / proxy)
-
----
-
-#### 7. **Kesimpulan**
-
-Sistem telah bekerja dengan baik sesuai target. Tinggal menambahkan UI/UX untuk menyempurnakan user experience dan meningkatkan nilai tambah proyek ini ke level produksi.
+- Modular and scalable codebase
+- Easily extendable to a full web app
+- CLI interface with potential for UI integration
+- Clean and structured CSV output
 
 ---
 
-Kalau kamu mau Putri bantu export ke **PDF** juga, tinggal bilang aja ya — bisa langsung tak buatkan. Mau langsung PDF-nya sekarang?
+## 🚀 Future Improvements
+
+- Build UI using **Streamlit**
+- Add visual insights (charts, counts)
+- Validate emails and phone number formats
+- Handle blocked requests using proxies or retries
+
+---
+
+## 📁 Project Structure
+
